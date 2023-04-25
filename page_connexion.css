@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');   /*On importe l'URL Google Font qui permet d'avoir accès à la police "Roboto"*/
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');       /*On importe l'URL Google Font qui permet d'avoir accès à la police "Electrolize"*/
+body {
+    font-family: 'Roboto', sans-serif;                                          /*On définit la police d'écriture*/
+    background: url(./img/background_inscription.jpg) top left no-repeat fixed; /*On importe l'image d'arrière plan, "top left" signifie qu'elle se positionne en haut à gauche, "fixed" fait en sorte que l'image reste fixe*/
+}
+
+/*Logo*/
+
+.logo a{
+  margin-left: 20px;                        /*On laisse une marge de 20 pixels vers la gauche*/
+  font-size: 40px;                          /*On définit la taille de la police à 40 pixels*/
+  font-weight: 600;                         /*On met le texte en gras à la valeur 600*/
+  color: rgb(250, 132, 7);                /*On définit la couleur de la police*/
+  font-family: 'Electrolize', sans-serif;   /*On définit la police d'écriture ici, Electrolize*/
+  text-decoration: none;                    /*On indique qu'on ne veut aucune décoration sur le texte (pas de soulignements, de pointillés etc*/
+}
+.logo a:hover{                /*Quand on passe le curseur sur le logo*/
+color: #fff;                /*La couleur du logo devient blanche quand on passe le curseur dessus*/
+transition: all 0.3s ease;    /*On crée un effet de transition pour tous les éléments de la classe logo, la couleur blanche apparaît petit à petit pour au final apparaître totalement au bout de 0.3s*/
+}
+
+/*Logo*/
+
+/*Formulaire*/
+  .container {
+    position: static;           /*On définit la position de la classe "container" qui englobe tout le formulaire comme statique.*/
+    display: flex;              /**/
+    align-items: center;        /*Permet d'aligner les éléments au centre*/
+    justify-content: center;    /*Permet d'aligner tout le contenu au centre de la page*/
+  }
+
+  .formSection {
+    margin-top: 8%;                                     /*On définit une marge de 8% vers le haut*/
+    background: #222222;                              /*On définit la couleur d'arrière plan du formulaire en gris*/
+    padding: 48px;              
+    height: 350px;                                      /*On définit la hauteur du formulaire à 350 pixels*/
+    border-left: 1px solid rgba(105, 102, 99, 0.7);   /*On crée une bordure à gauche du formulaire d'1 pixel de couleur gris clair*/
+    border-top: 1px solid rgba(105, 102, 99, 0.7);    /*On crée une bordure en haut du formulaire d'1 pixel de couleur gris clair*/
+    border-bottom: 1px solid rgba(105, 102, 99, 0.7); /*On crée une bordure en bas du formulaire d'1 pixel de couleur gris clair*/
+    border-right: 1px solid rgba(105, 102, 99, 0.7);  /*On crée une bordure à droite du formulaire d'1 pixel de couleur gris clair*/
+    color: #FFFFFF;                                   /*On définit la couleur du texte en blanc*/
+  }
+
+
+  h1 {
+    color: #FFFFFF;     /*On définit la couleur du titre en blanc*/
+    font-weight: 500;     /*On met le titre en gras à la valeur 500*/
+    font-size: 22.4px;    /*On définit la taille de la police à 22.4 pixels*/
+    margin-bottom: 50px;  /*On met une marge vers le bas de 50 pixels*/
+    margin-top: 0px;      /*On définit la marge vers le haut à 0 pixels*/
+    text-align: center    /*On aligne le titre au centre du formulaire*/
+  }
+  
+
+/*Cases "Email", "Mot de passe"*/
+  input {
+    background: transparent;                        /*On définit la couleur d'arrière plan des cases en transparent*/
+    border: none;
+    border-left: 1px solid rgb(250, 132, 7);      /*On crée une bordure à gauche du bouton d'1 pixel de couleur orange*/
+    border-top: 1px solid rgb(250, 132, 7);       /*On crée une bordure en haut du bouton d'1 pixel de couleur orange*/
+    border-bottom: 1px solid rgb(250, 132, 7);    /*On crée une bordure en bas du bouton d'1 pixel de couleur orange*/
+    border-right: 1px solid rgb(250, 132, 7);     /*On crée une bordure à droite du bouton d'1 pixel de couleur orange*/
+    padding: 16px;
+    width: 300px;                                   /*On définit la longueur de la case à 300 pixels*/
+    height: 10px;                                   /*On définit la hauteur de la case à 10 pixels*/
+    color: white;                                 /*On définit la couleur du texte des cases en blanc*/
+    font-weight: 500;                               /*On met le titre en gras à la valeur 500*/
+    margin-bottom: 16px;                            /*On crée une marge vers le bas entre chaque case de 16 pixels*/
+  }
+
+  input:hover{                        /*Quand on passe le curseur sur une case*/
+    background: rgb(68, 68, 68);    /*La couleur de fond de la case devient gris claire quand on passe dessus avec le curseur*/
+    transition: all 0.1s ease;        /*On crée un effet de transition pour chaque case, la couleur gris claire apparaît petit à petit pour au final apparaître totalement au bout de 0.1s*/
+  }
+
+  ::placeholder {
+    color: white;      /*On définit la couleur du texte (value) affiché dans les cases en blanc*/
+  }
+    
+/*Cases "Email", "Mot de passe"*/
+
+
+/*Bouton "Connexion"*/
+
+input[type="button"] {                                            /*Pour le bouton "S'inscrire"*/
+  margin-top: 25px;                                               /*On définit une marge de 25 pixels vers le haut*/
+  width: 332.5px;                                                 /*On définit la longueur du bouton à 332.5 pixels*/
+  height: 50px;                                                   /*On définit une hauteur de 50 pixels*/
+  font-size: 16px;                                                /*On définit la taille du texte contenu dans le bouton à 16 pixels*/
+  cursor: pointer;                                                /*Quand on passe sur le bouton, le curseur se transforme en une main afin de montrer un bouton cliquable*/
+  margin-bottom: 35px;                                            /*On définit une marge de 35 pixels vers le bas*/
+  background: linear-gradient(to right,#ff6600,#fa8407);      /*On définit la couleur d'arrière plan du bouton, ici il est défini en dégradé linéaire qui va vers la droite et qui pars d'un orange foncé pour aller vers un orange plus foncé*/
+}
+
+.btnLogin input:hover{                                /*Quand on passe le curseur de la souris sur le bouton Connexion*/
+  border-left: 1px solid rgba(105, 102, 99, 0.7);   /*On crée une bordure à gauche du bouton d'1 pixel de couleur gris clair*/
+  border-top: 1px solid rgba(105, 102, 99, 0.7);    /*On crée une bordure en haut du bouton d'1 pixel de couleur gris clair*/
+  border-bottom: 1px solid rgba(105, 102, 99, 0.7); /*On crée une bordure en bas du bouton d'1 pixel de couleur gris clair*/
+  border-right: 1px solid rgba(105, 102, 99, 0.7);  /*On crée une bordure à droite du bouton d'1 pixel de couleur gris clair*/
+  background:rgb(68, 68, 68);                       /*La couleur d'arrière plan du bouton devient grise*/
+  transition: all 0.3s ease;                          /*On crée un effet de transition pour le bouton, la couleur d'arrière plan et les bordures grises apparaissent petit à petit pour au final apparaître totalement au bout de 0.3s*/
+}
+
+/*Bouton "Connexion"*/
+
+/*Lien vers la page d'inscription*/
+
+.lienSignUp {
+  font-size: 13.25px;  /*On définit la taille de la police à 13.25 pixels*/
+  text-align: right;   /*On aligne le lien à droite*/
+}
+.lienSignUp a:hover{                  /*Quand on passe le curseur sur le lien*/
+  color: rgb(250, 132, 7);    /*La couleur du lien devient orange quand on passe le curseur sur le lien*/
+}
+
+.lienSignUp a{
+  color: white;     /*On définit la couleur du lien en blanc*/
+}
+
+/*Lien vers la page d'inscription'*/
+
+/*Formulaire*/
+
+
+
+    

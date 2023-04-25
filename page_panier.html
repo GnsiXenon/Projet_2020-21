@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier | Xenon Ent.</title>
+    <link rel="stylesheet" href="page_panier.css">
+    <script src="https://kit.fontawesome.com/d0f963aed6.js" crossorigin="anonymous"></script>
+    <script src="Recherche.js"></script>
+
+</head>
+<body>
+
+<!--navigation-->
+<div class="wrapper">
+  <nav>
+    <input type="checkbox" id="show-search">
+    <input type="checkbox" id="show-menu">
+    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <div class="content">
+      <div class="logo"><a href="index.html">XENON</a></div>
+      <ul class="links">
+        <li>
+          <a href="#" class="desktop-link">Produits</a>
+          <input type="checkbox" id="show-features">
+          <label for="show-features">Produits</label>
+          <ul>
+            <li><a href="vente_souris.html">Souris</a></li>
+            <li><a href="vente_clavier.html"> Clavier</a></li>
+            <li><a href="vente_ecran.html"> Écran</a></li>
+            <li><a href="vente_proco.html"> Processeur</a></li>
+          </ul>
+        </li>
+
+        <li><a href="page_nouveautes.html">Nouveautés</a></li>       
+        <li><a href="page_apropos.html">À propos</a></li>
+      </ul>
+    </div>
+    <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+    <form action="#" class="search-box">
+      <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher..." required>
+      <a href="" class="go-icon"><i class="fas fa-times"></i></a>
+    </form>
+    <div class="co">
+        <li>
+      <a href="page_connexion.html" class="user"><i class="fas fa-user"></i></a>
+      <a href="page_panier.html" class="user"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+  </div>
+    
+  </nav>
+</div>
+
+  <!--Header-->
+
+  <header>
+    <h1>Panier</h1>
+  </header>  
+
+  <!--Header-->
+
+    <!--Code ici-->
+  <div class="texte">
+    <h2>Votre panier est vide !</h2>
+  </div>
+  <div class="lien">
+    <a href="index.html" id="informations">Retour aux achats</a>
+  </div>
+
+
+
+    <!--Code ici-->
+  <!--Footer-->
+  <footer id=footer>
+    <div class="content-footer">
+      <ul class="reseaux">
+        <li><a><i class="fab fa-cc-visa"></i></a></li>
+        <li><a><i class="fab fa-cc-mastercard"></i></a></li>
+        <li><a><i class="fab fa-cc-amex"></i></a></li>
+        <li><a><i class="fab fa-cc-apple-pay"></i></a></li>
+        <li><a><i class="fab fa-cc-amazon-pay"></i></a></li>
+        <li><a><i class="fab fa-cc-paypal"></i></a></li>       
+      </ul>
+    </div>
+    <div class="bas">
+      <p>Copyright &copy2021 Xenon Entreprise</p>
+    </div>
+  </footer>
+ 
+</body>
+</html>
